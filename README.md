@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @hala194266
+- 👋 Hi, I’m @halt-20194266
 - 👀 I’m interested in Computer Science & Astrophysics
 - 🌱 I’m currently learning Imformation Technology
 - 💞️ I’m looking to collaborate on ...
