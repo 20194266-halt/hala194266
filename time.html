@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Cập nhật trang thái xe</h2>
+<div class="col-md">
+          <div class="form-floating">
+            <select class="form-select"  id="floatingSelectGrid" aria-label="Floating label select example">
+              
+              <option value="Nam">EC-234</option>
+              <option value="Nữ">EC-123</option>
+              <option value="Nam">EC-235</option>
+              <option value="Nữ">EC-163</option>
+            </select>
+            <label for="floatingSelectGrid">Chọn ID xe</label>
+          </div>
+        </div>
+  <div class="col-md">
+          <div class="form-floating">
+            <select class="form-select"style="margin-top: 1cm" id="floatingSelectGrid" aria-label="Floating label select example">
+              
+              <option value="Nam">Hoạt động bình thường</option>
+              <option value="Nữ">Đang sửa chữa</option>
+              
+            </select>
+            <label for="floatingSelectGrid">Tình trạng xe</label>
+          </div>
+        </div>
+
+
+
+
+
+<button id="myBtn" style="margin-top: 1cm">Giờ cho thuê</button>
+
+<p id="demo"></p>
+
+<button id="myBtn1" style="margin-top: 1cm">Giờ trả xe</button>
+<p id="demo1"style="margin-top: 1cm"></p>
+<p style="margin-top: 1cm">Thiết lập trạng thái: chưa có người thuê</p>
+<button id="myBtn2" style="margin-top: 1cm">Lưu lại</button>
+
+<script>
+
+ 
+document.getElementById("myBtn").addEventListener("click", function() {
+  myFunction();
+});
+
+function myFunction() {
+let today = new Date();
+ 
+    // Giờ, phút, giây hiện tại
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+  document.getElementById("demo").innerHTML = h+" giờ "+m+" phút "+s+" giây";
+}
+document.getElementById("myBtn1").addEventListener("click", function() {
+  myFunction1();
+});
+
+function myFunction1() {
+let today = new Date();
+ 
+    // Giờ, phút, giây hiện tại
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+  document.getElementById("demo1").innerHTML = h+" giờ "+m+" phút "+s+" giây";
+}
+</script>
+
+</body>
+</html>
